@@ -32,7 +32,8 @@ public class TestDulu extends javax.swing.JFrame {
         textNama = new javax.swing.JTextField();
         textUmur = new javax.swing.JTextField();
         buttonMulai = new javax.swing.JButton();
-        labelTampilkanNamaUmur = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        textAreaTampilkan = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,7 +54,9 @@ public class TestDulu extends javax.swing.JFrame {
             }
         });
 
-        labelTampilkanNamaUmur.setText("Haloo..");
+        textAreaTampilkan.setColumns(20);
+        textAreaTampilkan.setRows(5);
+        jScrollPane1.setViewportView(textAreaTampilkan);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -72,9 +75,9 @@ public class TestDulu extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(buttonMulai, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelTampilkanNamaUmur, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textUmur, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 41, Short.MAX_VALUE))))
+                            .addComponent(textUmur, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 39, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -89,9 +92,9 @@ public class TestDulu extends javax.swing.JFrame {
                     .addComponent(textUmur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addComponent(buttonMulai)
-                .addGap(34, 34, 34)
-                .addComponent(labelTampilkanNamaUmur)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         pack();
@@ -104,8 +107,10 @@ public class TestDulu extends javax.swing.JFrame {
     private void buttonMulaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMulaiActionPerformed
         // TODO add your handling code here:
         String nama = textNama.getText().trim();
-        String umur = textUmur.getText().trim();
-        labelTampilkanNamaUmur.setText("Umur dari " + nama + " adalah " + umur);
+        int umur = Integer.parseInt(textUmur.getText().trim());
+        int umurTo100 = 100 - umur;
+        
+        textAreaTampilkan.setText("Umur dari " + nama + " adalah " + umur + "\n" + nama + " akan berumur 100 tahun dalam " + umurTo100 + " tahun");
     }//GEN-LAST:event_buttonMulaiActionPerformed
 
     /**
@@ -145,9 +150,10 @@ public class TestDulu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonMulai;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel labelNama;
-    private javax.swing.JLabel labelTampilkanNamaUmur;
     private javax.swing.JLabel labelUmur;
+    private javax.swing.JTextArea textAreaTampilkan;
     private javax.swing.JTextField textNama;
     private javax.swing.JTextField textUmur;
     // End of variables declaration//GEN-END:variables
