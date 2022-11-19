@@ -7,7 +7,7 @@
  * @author (Margfirah-2108107010021)
  * @version (19-11-2022)
  */
-public class Komik extends Buku{
+public class Komik extends Buku {
     private String genre;
     private String jenis;
 
@@ -25,8 +25,11 @@ public class Komik extends Buku{
         return jenis;
     }
 
-    @Override
-    public String getJudul(){
-        return super.getJudul();
+    public void setGenre(String genre){
+        this.genre = genre;
+    }
+
+    public void setJenis(String jenis){
+        this.jenis = jenis;
     }
 }
