@@ -19,8 +19,7 @@ public class Novel extends Buku{
         return genre;
     }
 
-    @Override
-    public String getJudul(){
-        return super.getJudul();
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }
