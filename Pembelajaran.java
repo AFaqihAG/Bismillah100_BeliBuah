@@ -25,8 +25,11 @@ public class Pembelajaran extends Buku{
         return tingkatan;
     }
 
-    @Override
-    public String getJudul(){
-        return super.getJudul();
+    public void setMateri(String materi){
+        this.materi = materi;
+    }
+
+    public void setTingkatan(String tingkatan) {
+        this.tingkatan = tingkatan;
     }
 }
