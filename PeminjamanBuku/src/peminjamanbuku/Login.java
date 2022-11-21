@@ -133,7 +133,14 @@ public class Login extends javax.swing.JFrame {
         char[] password={'p', 'b', 'o'};
     if (username.equals(jTextField1.getText()) && Arrays.equals(password, jTextField2.getText().toCharArray())) {
         this.setVisible(false);
-        
+        //TODO move to next page
+
+
+
+
+
+
+        //
     }
      else {
             javax.swing.JOptionPane.showMessageDialog(null, "maaf username dan password anda salah");
