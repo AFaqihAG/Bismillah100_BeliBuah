@@ -7,18 +7,26 @@
  * @author (Margfirah-2108107010021)
  * @version (19-11-2022)
  */
-package peminjamanbuku;
-
 public class Pembelajaran extends Buku{
-    public String materi;
-    public String tingkatan;
+    private String materi;
+    private String tingkatan;
 
     public Pembelajaran(String materi, String tingkatan, String judul, String author, int halaman, String penerbit, int harga, int stok, int hargaperhari) {
         super(judul, author, halaman, penerbit, harga, stok, hargaperhari);
         this.materi = materi;
         this.tingkatan = tingkatan;
     }
-    public void setDeskripsiBuku() {
 
+    public String getMateri(){
+        return materi;
+    }
+
+     public String getTingkatan(){
+        return tingkatan;
+    }
+
+    @Override
+    public String getJudul(){
+        return super.getJudul();
     }
 }
