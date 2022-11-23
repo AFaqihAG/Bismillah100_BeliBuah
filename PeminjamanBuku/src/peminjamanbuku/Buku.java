@@ -1,3 +1,5 @@
+package peminjamanbuku;
+
 public class Buku {
     private String judul;
     private String author;

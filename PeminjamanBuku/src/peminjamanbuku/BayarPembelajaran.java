@@ -16,15 +16,15 @@ public class BayarPembelajaran extends javax.swing.JFrame {
      */
     public BayarPembelajaran(Pembelajaran pembelajaran) {
         initComponents();
-        judul.setText("Judul : " + pembelajaran.judul);
-        author.setText("Author : " + pembelajaran.author);
-        penerbit.setText("Penerbit : " + pembelajaran.penerbit);
-        materi.setText("Materi : " + pembelajaran.materi);
-        tingkatan.setText("Tingkatan : " + pembelajaran.tingkatan);
-        halaman.setText(String.valueOf("Halaman :" + pembelajaran.halaman));
-        stok.setText(String.valueOf("Stok :" + pembelajaran.stok));
-        harga.setText(String.valueOf("Harga :" + pembelajaran.harga));
-        hargaperhari.setText(String.valueOf("Harga/Hari :" + pembelajaran.hargaperhari));
+        judul.setText("Judul : " + pembelajaran.getJudul());
+        author.setText("Author : " + pembelajaran.getAuthor());
+        penerbit.setText("Penerbit : " + pembelajaran.getPenerbit());
+        materi.setText("Materi : " + pembelajaran.getMateri());
+        tingkatan.setText("Tingkatan : " + pembelajaran.getTingkatan());
+        halaman.setText(String.valueOf("Halaman :" + pembelajaran.getHalaman()));
+        stok.setText(String.valueOf("Stok :" + pembelajaran.getStok()));
+        harga.setText(String.valueOf("Harga :" + pembelajaran.getHarga()));
+        hargaperhari.setText(String.valueOf("Harga/Hari :" + pembelajaran.getHargaPerHari()));
     }
 
     /**
@@ -58,43 +58,43 @@ public class BayarPembelajaran extends javax.swing.JFrame {
 
         judul.setText("Judul");
         getContentPane().add(judul);
-        judul.setBounds(6, 48, 300, 16);
+        judul.setBounds(6, 48, 300, 14);
 
         author.setText("Author");
         getContentPane().add(author);
-        author.setBounds(6, 76, 300, 16);
+        author.setBounds(6, 76, 300, 14);
 
         penerbit.setText("Penerbit");
         getContentPane().add(penerbit);
-        penerbit.setBounds(6, 104, 300, 16);
+        penerbit.setBounds(6, 104, 300, 14);
 
         materi.setText("Materi");
         getContentPane().add(materi);
-        materi.setBounds(6, 132, 300, 16);
+        materi.setBounds(6, 132, 300, 14);
 
         halaman.setText("Halaman");
         getContentPane().add(halaman);
-        halaman.setBounds(6, 188, 300, 16);
+        halaman.setBounds(6, 188, 300, 14);
 
         tingkatan.setText("Tingkatan");
         getContentPane().add(tingkatan);
-        tingkatan.setBounds(6, 160, 300, 16);
+        tingkatan.setBounds(6, 160, 300, 14);
 
         stok.setText("Stok");
         getContentPane().add(stok);
-        stok.setBounds(6, 216, 300, 16);
+        stok.setBounds(6, 216, 300, 14);
 
         harga.setText("Harga");
         getContentPane().add(harga);
-        harga.setBounds(6, 244, 300, 16);
+        harga.setBounds(6, 244, 300, 14);
 
         hargaperhari.setText("Harga/Hari");
         getContentPane().add(hargaperhari);
-        hargaperhari.setBounds(6, 272, 300, 16);
+        hargaperhari.setBounds(6, 272, 300, 14);
 
-        background2.setIcon(new javax.swing.ImageIcon("C:\\Users\\acer\\Pictures\\bg2.jpg")); // NOI18N
+        background2.setPreferredSize(new java.awt.Dimension(400, 300));
         getContentPane().add(background2);
-        background2.setBounds(0, 0, 540, 400);
+        background2.setBounds(0, 0, 400, 300);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
