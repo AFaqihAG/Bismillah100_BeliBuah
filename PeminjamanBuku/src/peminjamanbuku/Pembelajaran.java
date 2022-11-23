@@ -10,28 +10,15 @@
 package peminjamanbuku;
 
 public class Pembelajaran extends Buku{
-    private String materi;
-    private String tingkatan;
+    public String materi;
+    public String tingkatan;
 
     public Pembelajaran(String materi, String tingkatan, String judul, String author, int halaman, String penerbit, int harga, int stok, int hargaperhari) {
         super(judul, author, halaman, penerbit, harga, stok, hargaperhari);
         this.materi = materi;
         this.tingkatan = tingkatan;
     }
+    public void setDeskripsiBuku() {
 
-    public String getMateri(){
-        return materi;
-    }
-
-     public String getTingkatan(){
-        return tingkatan;
-    }
-
-    public void setMateri(String materi){
-        this.materi = materi;
-    }
-
-    public void setTingkatan(String tingkatan) {
-        this.tingkatan = tingkatan;
     }
 }

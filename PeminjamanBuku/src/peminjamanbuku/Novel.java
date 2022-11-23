@@ -10,18 +10,13 @@
 package peminjamanbuku;
 
 public class Novel extends Buku{
-    private String genre;
+    public String genre;
 
     public Novel(String genre, String judul, String author, int halaman, String penerbit, int harga, int stok, int hargaperhari) {
         super(judul, author, halaman, penerbit, harga, stok, hargaperhari);
         this.genre = genre;
     }
-
-    public String getGenre(){
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setDeskripsiBuku() {
+    
     }
 }
