@@ -26,9 +26,4 @@ public class Komik extends Buku{
      public String getJenis(){
         return jenis;
     }
-
-    @Override
-    public String getJudul(){
-        return super.getJudul();
-    }
 }

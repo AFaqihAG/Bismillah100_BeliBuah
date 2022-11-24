@@ -26,9 +26,4 @@ public class Pembelajaran extends Buku{
      public String getTingkatan(){
         return tingkatan;
     }
-
-    @Override
-    public String getJudul(){
-        return super.getJudul();
-    }
 }
