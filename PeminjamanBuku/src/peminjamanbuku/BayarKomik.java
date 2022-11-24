@@ -35,18 +35,20 @@ public class BayarKomik extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jenisk = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         judulk = new javax.swing.JLabel();
         authork = new javax.swing.JLabel();
         penerbitk = new javax.swing.JLabel();
         genrek = new javax.swing.JLabel();
-        jenisk = new javax.swing.JLabel();
         halamank = new javax.swing.JLabel();
         stokk = new javax.swing.JLabel();
         hargak = new javax.swing.JLabel();
         hargaperharik = new javax.swing.JLabel();
         buttonBayarkan = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+
+        jenisk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/peminjamanbuku/bgImg.jpg"))); // NOI18N
+        jenisk.setText("Jenis");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 255, 153));
@@ -68,20 +70,17 @@ public class BayarKomik extends javax.swing.JFrame {
         genrek.setText("Genre");
         getContentPane().add(genrek, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 132, 250, -1));
 
-        jenisk.setText("Jenis");
-        getContentPane().add(jenisk, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 160, 250, -1));
-
         halamank.setText("Halaman");
-        getContentPane().add(halamank, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 188, 250, -1));
+        getContentPane().add(halamank, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 160, 250, -1));
 
         stokk.setText("Stok");
-        getContentPane().add(stokk, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 216, 250, -1));
+        getContentPane().add(stokk, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 188, 250, -1));
 
         hargak.setText("Harga");
-        getContentPane().add(hargak, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 244, 250, -1));
+        getContentPane().add(hargak, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 216, 250, -1));
 
         hargaperharik.setText("Harga/Hari");
-        getContentPane().add(hargaperharik, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 272, 250, -1));
+        getContentPane().add(hargaperharik, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 244, 250, -1));
 
         buttonBayarkan.setText("Bayar!");
         buttonBayarkan.addActionListener(new java.awt.event.ActionListener() {
@@ -90,9 +89,6 @@ public class BayarKomik extends javax.swing.JFrame {
             }
         });
         getContentPane().add(buttonBayarkan, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 73, -1));
-
-        jLabel2.setBackground(new java.awt.Color(102, 255, 0));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -145,7 +141,6 @@ public class BayarKomik extends javax.swing.JFrame {
     private javax.swing.JLabel hargak;
     private javax.swing.JLabel hargaperharik;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jenisk;
     private javax.swing.JLabel judulk;
     private javax.swing.JLabel penerbitk;
