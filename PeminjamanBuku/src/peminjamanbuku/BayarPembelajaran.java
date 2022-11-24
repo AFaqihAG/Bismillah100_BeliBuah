@@ -49,48 +49,38 @@ public class BayarPembelajaran extends javax.swing.JFrame {
         buttonBayarkan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         bkomik.setFont(new java.awt.Font("Book Antiqua", 0, 24)); // NOI18N
         bkomik.setText("Pembayaran");
-        getContentPane().add(bkomik);
-        bkomik.setBounds(6, 6, 144, 30);
+        getContentPane().add(bkomik, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 144, -1));
 
         judul.setText("Judul");
-        getContentPane().add(judul);
-        judul.setBounds(6, 48, 300, 14);
+        getContentPane().add(judul, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 300, -1));
 
         author.setText("Author");
-        getContentPane().add(author);
-        author.setBounds(6, 76, 300, 14);
+        getContentPane().add(author, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 76, 300, -1));
 
         penerbit.setText("Penerbit");
-        getContentPane().add(penerbit);
-        penerbit.setBounds(6, 104, 300, 14);
+        getContentPane().add(penerbit, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 104, 300, -1));
 
         materi.setText("Materi");
-        getContentPane().add(materi);
-        materi.setBounds(6, 132, 300, 14);
+        getContentPane().add(materi, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 132, 300, -1));
 
         halaman.setText("Halaman");
-        getContentPane().add(halaman);
-        halaman.setBounds(6, 188, 300, 14);
+        getContentPane().add(halaman, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 188, 300, -1));
 
         tingkatan.setText("Tingkatan");
-        getContentPane().add(tingkatan);
-        tingkatan.setBounds(6, 160, 300, 14);
+        getContentPane().add(tingkatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 160, 300, -1));
 
         stok.setText("Stok");
-        getContentPane().add(stok);
-        stok.setBounds(6, 216, 300, 14);
+        getContentPane().add(stok, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 216, 300, -1));
 
         harga.setText("Harga");
-        getContentPane().add(harga);
-        harga.setBounds(6, 244, 300, 14);
+        getContentPane().add(harga, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 244, 300, -1));
 
         hargaperhari.setText("Harga/Hari");
-        getContentPane().add(hargaperhari);
-        hargaperhari.setBounds(6, 272, 300, 14);
+        getContentPane().add(hargaperhari, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 272, 300, -1));
 
         buttonBayarkan.setText("Bayar!");
         buttonBayarkan.addActionListener(new java.awt.event.ActionListener() {
@@ -98,8 +88,7 @@ public class BayarPembelajaran extends javax.swing.JFrame {
                 buttonBayarkanActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonBayarkan);
-        buttonBayarkan.setBounds(320, 270, 65, 23);
+        getContentPane().add(buttonBayarkan, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

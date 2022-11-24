@@ -46,50 +46,42 @@ public class BayarKomik extends javax.swing.JFrame {
         hargak = new javax.swing.JLabel();
         hargaperharik = new javax.swing.JLabel();
         buttonBayarkan = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        setBackground(new java.awt.Color(153, 255, 153));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Book Antiqua", 0, 24)); // NOI18N
         jLabel1.setText("Pembayaran");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(6, 6, 150, 30);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 150, -1));
 
         judulk.setText("Judul");
-        getContentPane().add(judulk);
-        judulk.setBounds(6, 48, 250, 14);
+        getContentPane().add(judulk, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 250, -1));
 
         authork.setText("Author");
-        getContentPane().add(authork);
-        authork.setBounds(6, 76, 250, 14);
+        getContentPane().add(authork, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 76, 250, -1));
 
         penerbitk.setText("Penerbit");
-        getContentPane().add(penerbitk);
-        penerbitk.setBounds(6, 104, 250, 14);
+        getContentPane().add(penerbitk, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 104, 250, -1));
 
         genrek.setText("Genre");
-        getContentPane().add(genrek);
-        genrek.setBounds(6, 132, 250, 14);
+        getContentPane().add(genrek, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 132, 250, -1));
 
         jenisk.setText("Jenis");
-        getContentPane().add(jenisk);
-        jenisk.setBounds(6, 160, 250, 14);
+        getContentPane().add(jenisk, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 160, 250, -1));
 
         halamank.setText("Halaman");
-        getContentPane().add(halamank);
-        halamank.setBounds(6, 188, 250, 14);
+        getContentPane().add(halamank, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 188, 250, -1));
 
         stokk.setText("Stok");
-        getContentPane().add(stokk);
-        stokk.setBounds(6, 216, 250, 14);
+        getContentPane().add(stokk, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 216, 250, -1));
 
         hargak.setText("Harga");
-        getContentPane().add(hargak);
-        hargak.setBounds(6, 244, 250, 14);
+        getContentPane().add(hargak, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 244, 250, -1));
 
         hargaperharik.setText("Harga/Hari");
-        getContentPane().add(hargaperharik);
-        hargaperharik.setBounds(6, 272, 250, 14);
+        getContentPane().add(hargaperharik, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 272, 250, -1));
 
         buttonBayarkan.setText("Bayar!");
         buttonBayarkan.addActionListener(new java.awt.event.ActionListener() {
@@ -97,8 +89,10 @@ public class BayarKomik extends javax.swing.JFrame {
                 buttonBayarkanActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonBayarkan);
-        buttonBayarkan.setBounds(320, 270, 73, 23);
+        getContentPane().add(buttonBayarkan, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 73, -1));
+
+        jLabel2.setBackground(new java.awt.Color(102, 255, 0));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -151,6 +145,7 @@ public class BayarKomik extends javax.swing.JFrame {
     private javax.swing.JLabel hargak;
     private javax.swing.JLabel hargaperharik;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jenisk;
     private javax.swing.JLabel judulk;
     private javax.swing.JLabel penerbitk;

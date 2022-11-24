@@ -46,44 +46,26 @@ public class BayarNovel extends javax.swing.JFrame {
         buttonBayarkan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        setBackground(new java.awt.Color(153, 255, 153));
 
         jLabel1.setFont(new java.awt.Font("Book Antiqua", 0, 24)); // NOI18N
         jLabel1.setText("Pembayaran");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(6, 0, 150, 30);
 
         juduln.setText("Judul");
-        getContentPane().add(juduln);
-        juduln.setBounds(6, 48, 250, 14);
 
         authorn.setText("Author");
-        getContentPane().add(authorn);
-        authorn.setBounds(6, 76, 250, 14);
 
         penerbitn.setText("Penerbit");
-        getContentPane().add(penerbitn);
-        penerbitn.setBounds(6, 104, 250, 14);
 
         genren.setText("Genre");
-        getContentPane().add(genren);
-        genren.setBounds(6, 132, 250, 14);
 
         halamann.setText("Halaman");
-        getContentPane().add(halamann);
-        halamann.setBounds(6, 160, 250, 14);
 
         stokn.setText("Stok");
-        getContentPane().add(stokn);
-        stokn.setBounds(6, 188, 250, 14);
 
         hargaperharin.setText("Harga/Hari");
-        getContentPane().add(hargaperharin);
-        hargaperharin.setBounds(6, 244, 250, 14);
 
         hargan.setText("Harga");
-        getContentPane().add(hargan);
-        hargan.setBounds(6, 216, 250, 14);
 
         buttonBayarkan.setText("Bayar!");
         buttonBayarkan.addActionListener(new java.awt.event.ActionListener() {
@@ -91,8 +73,65 @@ public class BayarNovel extends javax.swing.JFrame {
                 buttonBayarkanActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonBayarkan);
-        buttonBayarkan.setBounds(330, 270, 65, 23);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(juduln, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(authorn, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(penerbitn, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(genren, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(halamann, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(stokn, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(hargan, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(hargaperharin, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(330, 330, 330)
+                .addComponent(buttonBayarkan))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(juduln)
+                .addGap(14, 14, 14)
+                .addComponent(authorn)
+                .addGap(14, 14, 14)
+                .addComponent(penerbitn)
+                .addGap(14, 14, 14)
+                .addComponent(genren)
+                .addGap(14, 14, 14)
+                .addComponent(halamann)
+                .addGap(14, 14, 14)
+                .addComponent(stokn)
+                .addGap(14, 14, 14)
+                .addComponent(hargan)
+                .addGap(14, 14, 14)
+                .addComponent(hargaperharin)
+                .addGap(12, 12, 12)
+                .addComponent(buttonBayarkan))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
