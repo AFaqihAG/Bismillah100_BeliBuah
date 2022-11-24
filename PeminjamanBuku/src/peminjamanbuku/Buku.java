@@ -53,7 +53,7 @@ public class Buku {
         return penerbit;
     }
 
-    public void setPenerbit(String Penerbit) {
+    public void setPenerbit(String penerbit) {
         this.penerbit = penerbit;
     }
 

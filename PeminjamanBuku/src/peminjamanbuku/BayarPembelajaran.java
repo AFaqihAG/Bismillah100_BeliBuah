@@ -46,7 +46,7 @@ public class BayarPembelajaran extends javax.swing.JFrame {
         stok = new javax.swing.JLabel();
         harga = new javax.swing.JLabel();
         hargaperhari = new javax.swing.JLabel();
-        background2 = new javax.swing.JLabel();
+        buttonBayarkan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -92,12 +92,22 @@ public class BayarPembelajaran extends javax.swing.JFrame {
         getContentPane().add(hargaperhari);
         hargaperhari.setBounds(6, 272, 300, 14);
 
-        background2.setPreferredSize(new java.awt.Dimension(400, 300));
-        getContentPane().add(background2);
-        background2.setBounds(0, 0, 400, 300);
+        buttonBayarkan.setText("Bayar!");
+        buttonBayarkan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonBayarkanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(buttonBayarkan);
+        buttonBayarkan.setBounds(320, 270, 65, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonBayarkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBayarkanActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_buttonBayarkanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -136,8 +146,8 @@ public class BayarPembelajaran extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel author;
-    private javax.swing.JLabel background2;
     private javax.swing.JLabel bkomik;
+    private javax.swing.JButton buttonBayarkan;
     private javax.swing.JLabel halaman;
     private javax.swing.JLabel harga;
     private javax.swing.JLabel hargaperhari;

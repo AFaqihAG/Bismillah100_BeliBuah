@@ -43,7 +43,7 @@ public class BayarNovel extends javax.swing.JFrame {
         stokn = new javax.swing.JLabel();
         hargaperharin = new javax.swing.JLabel();
         hargan = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        buttonBayarkan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -85,12 +85,22 @@ public class BayarNovel extends javax.swing.JFrame {
         getContentPane().add(hargan);
         hargan.setBounds(6, 216, 250, 14);
 
-        jLabel2.setPreferredSize(new java.awt.Dimension(400, 300));
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 400, 300);
+        buttonBayarkan.setText("Bayar!");
+        buttonBayarkan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonBayarkanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(buttonBayarkan);
+        buttonBayarkan.setBounds(330, 270, 65, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonBayarkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBayarkanActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_buttonBayarkanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,12 +139,12 @@ public class BayarNovel extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel authorn;
+    private javax.swing.JButton buttonBayarkan;
     private javax.swing.JLabel genren;
     private javax.swing.JLabel halamann;
     private javax.swing.JLabel hargan;
     private javax.swing.JLabel hargaperharin;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel juduln;
     private javax.swing.JLabel penerbitn;
     private javax.swing.JLabel stokn;
