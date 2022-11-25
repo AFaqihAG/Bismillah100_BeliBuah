@@ -7,11 +7,15 @@
  * @author (Margfirah-2108107010021)
  * @version (19-11-2022)
  */
-package peminjamanbuku;
+package databukudkk;
 
-public class Pembelajaran extends Buku{
+public class Pembelajaran extends Buku implements DeskripsiBuku {
     private String materi;
     private String tingkatan;
+
+    public Pembelajaran() {
+        super();
+    }
 
     public Pembelajaran(String materi, String tingkatan, String judul, String author, int halaman, String penerbit, int harga, int stok, int hargaperhari) {
         super(judul, author, halaman, penerbit, harga, stok, hargaperhari);
@@ -25,5 +29,11 @@ public class Pembelajaran extends Buku{
 
      public String getTingkatan(){
         return tingkatan;
+    }
+
+    @Override
+    public String deskripsi() {
+        // TODO Auto-generated method stub
+        return "Pembelajaran adalah jenis buku untuk murid";
     }
 }

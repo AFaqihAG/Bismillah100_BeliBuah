@@ -1,4 +1,4 @@
-package peminjamanbuku;
+package databukudkk;
 
 public class Buku {
     private String judul;

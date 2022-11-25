@@ -4,12 +4,14 @@
  */
 package peminjamanbuku;
 
+import databukudkk.Pembelajaran;
+
 /**
  *
  * @author acer
  */
 public class BayarPembelajaran extends javax.swing.JFrame {
-        static Pembelajaran pembelajaran;
+    private static Pembelajaran pembelajaran;
 
     /**
      * Creates new form BayarPembelajaran
@@ -49,38 +51,38 @@ public class BayarPembelajaran extends javax.swing.JFrame {
         buttonBayarkan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new nbimports.AbsoluteLayout());
 
         bkomik.setFont(new java.awt.Font("Book Antiqua", 0, 24)); // NOI18N
         bkomik.setText("Pembayaran");
-        getContentPane().add(bkomik, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 144, -1));
+        getContentPane().add(bkomik, new nbimports.AbsoluteConstraints(6, 6, 144, -1));
 
         judul.setText("Judul");
-        getContentPane().add(judul, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 48, 300, -1));
+        getContentPane().add(judul, new nbimports.AbsoluteConstraints(6, 48, 300, -1));
 
         author.setText("Author");
-        getContentPane().add(author, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 76, 300, -1));
+        getContentPane().add(author, new nbimports.AbsoluteConstraints(6, 76, 300, -1));
 
         penerbit.setText("Penerbit");
-        getContentPane().add(penerbit, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 104, 300, -1));
+        getContentPane().add(penerbit, new nbimports.AbsoluteConstraints(6, 104, 300, -1));
 
         materi.setText("Materi");
-        getContentPane().add(materi, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 132, 300, -1));
+        getContentPane().add(materi, new nbimports.AbsoluteConstraints(6, 132, 300, -1));
 
         halaman.setText("Halaman");
-        getContentPane().add(halaman, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 188, 300, -1));
+        getContentPane().add(halaman, new nbimports.AbsoluteConstraints(6, 188, 300, -1));
 
         tingkatan.setText("Tingkatan");
-        getContentPane().add(tingkatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 160, 300, -1));
+        getContentPane().add(tingkatan, new nbimports.AbsoluteConstraints(6, 160, 300, -1));
 
         stok.setText("Stok");
-        getContentPane().add(stok, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 216, 300, -1));
+        getContentPane().add(stok, new nbimports.AbsoluteConstraints(6, 216, 300, -1));
 
         harga.setText("Harga");
-        getContentPane().add(harga, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 244, 300, -1));
+        getContentPane().add(harga, new nbimports.AbsoluteConstraints(6, 244, 300, -1));
 
         hargaperhari.setText("Harga/Hari");
-        getContentPane().add(hargaperhari, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 272, 300, -1));
+        getContentPane().add(hargaperhari, new nbimports.AbsoluteConstraints(6, 272, 300, -1));
 
         buttonBayarkan.setText("Bayar!");
         buttonBayarkan.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +90,7 @@ public class BayarPembelajaran extends javax.swing.JFrame {
                 buttonBayarkanActionPerformed(evt);
             }
         });
-        getContentPane().add(buttonBayarkan, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, -1, -1));
+        getContentPane().add(buttonBayarkan, new nbimports.AbsoluteConstraints(320, 270, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -4,12 +4,15 @@
  */
 package peminjamanbuku;
 
+import databukudkk.Novel;
+
 /**
  *
  * @author acer
  */
 public class BayarNovel extends javax.swing.JFrame {
-        static Novel novel;
+    private static Novel novel;
+    
     /**
      * Creates new form BayarNovel
      */

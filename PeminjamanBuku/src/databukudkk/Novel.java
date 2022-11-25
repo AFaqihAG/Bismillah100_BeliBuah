@@ -7,10 +7,14 @@
  * @author (Margfirah-2108107010021)
  * @version (19-11-2022)
  */
-package peminjamanbuku;
+package databukudkk;
 
-public class Novel extends Buku{
+public class Novel extends Buku implements DeskripsiBuku {
     private String genre;
+
+    public Novel() {
+        super();
+    }
 
     public Novel(String genre, String judul, String author, int halaman, String penerbit, int harga, int stok, int hargaperhari) {
         super(judul, author, halaman, penerbit, harga, stok, hargaperhari);
@@ -19,5 +23,10 @@ public class Novel extends Buku{
 
     public String getGenre(){
         return genre;
+    }
+
+    @Override
+    public String deskripsi() {
+        return "Novel adalah novel";
     }
 }

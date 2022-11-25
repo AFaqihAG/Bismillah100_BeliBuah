@@ -4,6 +4,9 @@
  */
 package peminjamanbuku;
 
+import databukudkk.*;
+import nbimports.*;
+
 /**
  *
  * @author acer
@@ -15,6 +18,12 @@ public class PilihBuku extends javax.swing.JFrame {
      */
     public PilihBuku() {
         initComponents();
+        Novel novelDesc = new Novel();
+        Komik komikDesc = new Komik();
+        Pembelajaran pembelajaranDesc = new Pembelajaran();
+        labelDescNovel.setText(novelDesc.deskripsi());
+        labelDescKomik.setText(komikDesc.deskripsi());
+        labelDescPelajaran.setText(pembelajaranDesc.deskripsi());
     }
 
     /**
@@ -47,26 +56,29 @@ public class PilihBuku extends javax.swing.JFrame {
         pelajaran4 = new javax.swing.JButton();
         pelajaran5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        labelDescPelajaran = new javax.swing.JLabel();
+        labelDescNovel = new javax.swing.JLabel();
+        labelDescKomik = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new nbimports.AbsoluteLayout());
 
         pBuku.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         pBuku.setText("PILIH BUKU ");
-        getContentPane().add(pBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 161, 40));
+        getContentPane().add(pBuku, new nbimports.AbsoluteConstraints(6, 6, 161, 40));
 
         Lbuku.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         Lbuku.setText("LIST SEMUA BUKU");
-        getContentPane().add(Lbuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 52, 177, 40));
+        getContentPane().add(Lbuku, new nbimports.AbsoluteConstraints(6, 52, 177, 40));
 
         novel.setText("Novel");
-        getContentPane().add(novel, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 98, 70, -1));
+        getContentPane().add(novel, new nbimports.AbsoluteConstraints(85, 98, 70, -1));
 
         komik.setText("Komik");
-        getContentPane().add(komik, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 98, 70, -1));
+        getContentPane().add(komik, new nbimports.AbsoluteConstraints(275, 98, 70, -1));
 
         pelajaran.setText("Pelajaran");
-        getContentPane().add(pelajaran, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 70, -1));
+        getContentPane().add(pelajaran, new nbimports.AbsoluteConstraints(450, 100, 70, -1));
 
         novel1.setText("Dilan");
         novel1.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +86,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel1ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 126, 99, -1));
+        getContentPane().add(novel1, new nbimports.AbsoluteConstraints(56, 326, 99, -1));
 
         novel2.setText("Bumi");
         novel2.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +94,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel2ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 166, 99, -1));
+        getContentPane().add(novel2, new nbimports.AbsoluteConstraints(56, 166, 99, -1));
 
         novel3.setText("Rindu");
         novel3.addActionListener(new java.awt.event.ActionListener() {
@@ -90,7 +102,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel3ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 206, 99, -1));
+        getContentPane().add(novel3, new nbimports.AbsoluteConstraints(56, 206, 99, -1));
 
         novel4.setText("Pulang");
         novel4.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +110,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel4ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 246, 99, -1));
+        getContentPane().add(novel4, new nbimports.AbsoluteConstraints(56, 246, 99, -1));
 
         novel5.setText("Rumah Kaca");
         novel5.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +118,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel5ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 286, 99, -1));
+        getContentPane().add(novel5, new nbimports.AbsoluteConstraints(56, 286, 99, -1));
 
         komik1.setText("Naruto");
         komik1.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +126,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik1ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik1, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 126, 99, -1));
+        getContentPane().add(komik1, new nbimports.AbsoluteConstraints(246, 326, 99, -1));
 
         komik2.setText("Bleach");
         komik2.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +134,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik2ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik2, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 166, 99, -1));
+        getContentPane().add(komik2, new nbimports.AbsoluteConstraints(246, 166, 99, -1));
 
         komik3.setText("One Piece");
         komik3.addActionListener(new java.awt.event.ActionListener() {
@@ -130,7 +142,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik3ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik3, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 206, 99, -1));
+        getContentPane().add(komik3, new nbimports.AbsoluteConstraints(246, 206, 99, -1));
 
         komik4.setText("HxH");
         komik4.addActionListener(new java.awt.event.ActionListener() {
@@ -138,7 +150,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik4ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik4, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 246, 99, -1));
+        getContentPane().add(komik4, new nbimports.AbsoluteConstraints(246, 246, 99, -1));
 
         komik5.setText("AoT");
         komik5.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +158,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik5ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik5, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 286, 99, -1));
+        getContentPane().add(komik5, new nbimports.AbsoluteConstraints(246, 286, 99, -1));
 
         pelajaran1.setText("Matematika");
         pelajaran1.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +166,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran1ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran1, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 126, 99, -1));
+        getContentPane().add(pelajaran1, new nbimports.AbsoluteConstraints(426, 326, 99, -1));
 
         pelajaran2.setText("Biologi");
         pelajaran2.addActionListener(new java.awt.event.ActionListener() {
@@ -162,7 +174,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran2ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran2, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 166, 99, -1));
+        getContentPane().add(pelajaran2, new nbimports.AbsoluteConstraints(426, 166, 99, -1));
 
         pelajaran3.setText("Kimia");
         pelajaran3.addActionListener(new java.awt.event.ActionListener() {
@@ -170,7 +182,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran3ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran3, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 206, 99, -1));
+        getContentPane().add(pelajaran3, new nbimports.AbsoluteConstraints(426, 206, 99, -1));
 
         pelajaran4.setText("Statistika");
         pelajaran4.addActionListener(new java.awt.event.ActionListener() {
@@ -178,7 +190,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran4ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran4, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 246, 99, -1));
+        getContentPane().add(pelajaran4, new nbimports.AbsoluteConstraints(426, 246, 99, -1));
 
         pelajaran5.setText("Ekonomi");
         pelajaran5.addActionListener(new java.awt.event.ActionListener() {
@@ -186,10 +198,17 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran5ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran5, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 286, 99, -1));
+        getContentPane().add(pelajaran5, new nbimports.AbsoluteConstraints(426, 286, 99, -1));
+        getContentPane().add(jLabel1, new nbimports.AbsoluteConstraints(0, 0, 580, 400));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\acer\\Pictures\\bg2.jpg")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 400));
+        labelDescPelajaran.setText("DescPelajaran here");
+        getContentPane().add(labelDescPelajaran, new nbimports.AbsoluteConstraints(406, 126, 150, -1));
+
+        labelDescNovel.setText("DescNovel here");
+        getContentPane().add(labelDescNovel, new nbimports.AbsoluteConstraints(26, 126, 150, -1));
+
+        labelDescKomik.setText("DescKomik here");
+        getContentPane().add(labelDescKomik, new nbimports.AbsoluteConstraints(216, 126, 150, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -343,6 +362,9 @@ public class PilihBuku extends javax.swing.JFrame {
     private javax.swing.JButton komik3;
     private javax.swing.JButton komik4;
     private javax.swing.JButton komik5;
+    private javax.swing.JLabel labelDescKomik;
+    private javax.swing.JLabel labelDescNovel;
+    private javax.swing.JLabel labelDescPelajaran;
     private javax.swing.JLabel novel;
     private javax.swing.JButton novel1;
     private javax.swing.JButton novel2;
