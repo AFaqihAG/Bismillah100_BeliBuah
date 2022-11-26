@@ -33,6 +33,6 @@ public class Komik extends Buku implements DeskripsiBuku {
 
     @Override
     public String deskripsi() {
-        return "Komik adalah komik";
+        return "Aaaa...";
     }
 }

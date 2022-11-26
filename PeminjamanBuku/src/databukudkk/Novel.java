@@ -27,6 +27,6 @@ public class Novel extends Buku implements DeskripsiBuku {
 
     @Override
     public String deskripsi() {
-        return "Novel adalah novel";
+        return "Love is or it ain't..";
     }
 }

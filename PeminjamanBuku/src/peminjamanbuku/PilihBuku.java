@@ -4,7 +4,10 @@
  */
 package peminjamanbuku;
 
+import javax.swing.JTextField;
+
 import databukudkk.*;
+import nbimports.*;
 
 /**
  *
@@ -17,12 +20,6 @@ public class PilihBuku extends javax.swing.JFrame {
      */
     public PilihBuku() {
         initComponents();
-        Novel novelDesc = new Novel();
-        Komik komikDesc = new Komik();
-        Pembelajaran pembelajaranDesc = new Pembelajaran();
-        labelDescNovel.setText(novelDesc.deskripsi());
-        labelDescKomik.setText(komikDesc.deskripsi());
-        labelDescPelajaran.setText(pembelajaranDesc.deskripsi());
     }
 
     /**
@@ -34,6 +31,10 @@ public class PilihBuku extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Novel novell = new Novel();
+        Komik komikk = new Komik();
+        Pembelajaran pembelajarann = new Pembelajaran();
+        jLabel1 = new javax.swing.JLabel();
         pBuku = new javax.swing.JLabel();
         Lbuku = new javax.swing.JLabel();
         novel = new javax.swing.JLabel();
@@ -54,30 +55,29 @@ public class PilihBuku extends javax.swing.JFrame {
         pelajaran3 = new javax.swing.JButton();
         pelajaran4 = new javax.swing.JButton();
         pelajaran5 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         labelDescPelajaran = new javax.swing.JLabel();
         labelDescNovel = new javax.swing.JLabel();
         labelDescKomik = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new nbimports.AbsoluteLayout());
+        getContentPane().setLayout(new AbsoluteLayout());
 
         pBuku.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         pBuku.setText("PILIH BUKU ");
-        getContentPane().add(pBuku, new nbimports.AbsoluteConstraints(6, 6, 161, 40));
+        getContentPane().add(pBuku, new AbsoluteConstraints(6, 6, 161, 40));
 
         Lbuku.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         Lbuku.setText("LIST SEMUA BUKU");
-        getContentPane().add(Lbuku, new nbimports.AbsoluteConstraints(6, 52, 177, 40));
+        getContentPane().add(Lbuku, new AbsoluteConstraints(6, 52, 177, 40));
 
         novel.setText("Novel");
-        getContentPane().add(novel, new nbimports.AbsoluteConstraints(85, 98, 70, -1));
+        getContentPane().add(novel, new AbsoluteConstraints(85, 98, 70, -1));
 
         komik.setText("Komik");
-        getContentPane().add(komik, new nbimports.AbsoluteConstraints(275, 98, 70, -1));
+        getContentPane().add(komik, new AbsoluteConstraints(275, 98, 70, -1));
 
         pelajaran.setText("Pelajaran");
-        getContentPane().add(pelajaran, new nbimports.AbsoluteConstraints(450, 100, 70, -1));
+        getContentPane().add(pelajaran, new AbsoluteConstraints(450, 100, 70, -1));
 
         novel1.setText("Dilan");
         novel1.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel1ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel1, new nbimports.AbsoluteConstraints(56, 326, 99, -1));
+        getContentPane().add(novel1, new AbsoluteConstraints(56, 326, 99, -1));
 
         novel2.setText("Bumi");
         novel2.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +93,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel2ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel2, new nbimports.AbsoluteConstraints(56, 166, 99, -1));
+        getContentPane().add(novel2, new AbsoluteConstraints(56, 166, 99, -1));
 
         novel3.setText("Rindu");
         novel3.addActionListener(new java.awt.event.ActionListener() {
@@ -101,7 +101,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel3ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel3, new nbimports.AbsoluteConstraints(56, 206, 99, -1));
+        getContentPane().add(novel3, new AbsoluteConstraints(56, 206, 99, -1));
 
         novel4.setText("Pulang");
         novel4.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +109,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel4ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel4, new nbimports.AbsoluteConstraints(56, 246, 99, -1));
+        getContentPane().add(novel4, new AbsoluteConstraints(56, 246, 99, -1));
 
         novel5.setText("Rumah Kaca");
         novel5.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +117,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 novel5ActionPerformed(evt);
             }
         });
-        getContentPane().add(novel5, new nbimports.AbsoluteConstraints(56, 286, 99, -1));
+        getContentPane().add(novel5, new AbsoluteConstraints(56, 286, 99, -1));
 
         komik1.setText("Naruto");
         komik1.addActionListener(new java.awt.event.ActionListener() {
@@ -125,7 +125,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik1ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik1, new nbimports.AbsoluteConstraints(246, 326, 99, -1));
+        getContentPane().add(komik1, new AbsoluteConstraints(246, 326, 99, -1));
 
         komik2.setText("Bleach");
         komik2.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +133,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik2ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik2, new nbimports.AbsoluteConstraints(246, 166, 99, -1));
+        getContentPane().add(komik2, new AbsoluteConstraints(246, 166, 99, -1));
 
         komik3.setText("One Piece");
         komik3.addActionListener(new java.awt.event.ActionListener() {
@@ -141,7 +141,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik3ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik3, new nbimports.AbsoluteConstraints(246, 206, 99, -1));
+        getContentPane().add(komik3, new AbsoluteConstraints(246, 206, 99, -1));
 
         komik4.setText("HxH");
         komik4.addActionListener(new java.awt.event.ActionListener() {
@@ -149,7 +149,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik4ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik4, new nbimports.AbsoluteConstraints(246, 246, 99, -1));
+        getContentPane().add(komik4, new AbsoluteConstraints(246, 246, 99, -1));
 
         komik5.setText("AoT");
         komik5.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +157,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 komik5ActionPerformed(evt);
             }
         });
-        getContentPane().add(komik5, new nbimports.AbsoluteConstraints(246, 286, 99, -1));
+        getContentPane().add(komik5, new AbsoluteConstraints(246, 286, 99, -1));
 
         pelajaran1.setText("Matematika");
         pelajaran1.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +165,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran1ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran1, new nbimports.AbsoluteConstraints(426, 326, 99, -1));
+        getContentPane().add(pelajaran1, new AbsoluteConstraints(426, 326, 99, -1));
 
         pelajaran2.setText("Biologi");
         pelajaran2.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +173,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran2ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran2, new nbimports.AbsoluteConstraints(426, 166, 99, -1));
+        getContentPane().add(pelajaran2, new AbsoluteConstraints(426, 166, 99, -1));
 
         pelajaran3.setText("Kimia");
         pelajaran3.addActionListener(new java.awt.event.ActionListener() {
@@ -181,7 +181,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran3ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran3, new nbimports.AbsoluteConstraints(426, 206, 99, -1));
+        getContentPane().add(pelajaran3, new AbsoluteConstraints(426, 206, 99, -1));
 
         pelajaran4.setText("Statistika");
         pelajaran4.addActionListener(new java.awt.event.ActionListener() {
@@ -189,7 +189,7 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran4ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran4, new nbimports.AbsoluteConstraints(426, 246, 99, -1));
+        getContentPane().add(pelajaran4, new AbsoluteConstraints(426, 246, 99, -1));
 
         pelajaran5.setText("Ekonomi");
         pelajaran5.addActionListener(new java.awt.event.ActionListener() {
@@ -197,121 +197,111 @@ public class PilihBuku extends javax.swing.JFrame {
                 pelajaran5ActionPerformed(evt);
             }
         });
-        getContentPane().add(pelajaran5, new nbimports.AbsoluteConstraints(426, 286, 99, -1));
-        getContentPane().add(jLabel1, new nbimports.AbsoluteConstraints(0, 0, 580, 400));
+        getContentPane().add(pelajaran5, new AbsoluteConstraints(426, 286, 99, -1));
 
-        labelDescPelajaran.setText("DescPelajaran here");
-        getContentPane().add(labelDescPelajaran, new nbimports.AbsoluteConstraints(406, 126, 150, -1));
+        labelDescPelajaran.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        labelDescPelajaran.setHorizontalAlignment(JTextField.CENTER);
+        labelDescPelajaran.setText(pembelajarann.deskripsi());
+        getContentPane().add(labelDescPelajaran, new AbsoluteConstraints(406, 126, 150, -1));
 
-        labelDescNovel.setText("DescNovel here..");
-        getContentPane().add(labelDescNovel, new nbimports.AbsoluteConstraints(26, 126, 150, -1));
+        labelDescNovel.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        labelDescNovel.setHorizontalAlignment(JTextField.CENTER);
+        labelDescNovel.setText(novell.deskripsi());
+        getContentPane().add(labelDescNovel, new AbsoluteConstraints(26, 126, 150, -1));
 
-        labelDescKomik.setText("DescKomik here");
-        getContentPane().add(labelDescKomik, new nbimports.AbsoluteConstraints(216, 126, 150, -1));
+        labelDescKomik.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        labelDescKomik.setHorizontalAlignment(JTextField.CENTER);
+        labelDescKomik.setText(komikk.deskripsi());
+        getContentPane().add(labelDescKomik, new AbsoluteConstraints(216, 126, 150, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void pelajaran2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pelajaran2ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Pembelajaran biologi = new Pembelajaran("Mikrobiologi", "SMA", "Biologi", "Glazer", 300, "Madd", 250000, 76, 7000);
         new BayarPembelajaran(biologi).setVisible(true);
     }//GEN-LAST:event_pelajaran2ActionPerformed
 
     private void novel4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novel4ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Novel pulang = new Novel("Fiksi, Fantasi", "Pulang", "Tere Liye", 400, "Republika", 67000, 45, 3000);
         new BayarNovel(pulang).setVisible(true);
     }//GEN-LAST:event_novel4ActionPerformed
 
     private void novel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novel1ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Novel dilan = new Novel("Romance", "Dilan Adalah Dilanku Tahun 1990", "Pidi Baiq", 348, "Pastel Books", 59000, 200, 2000);
         new BayarNovel(dilan).setVisible(true);       
     }//GEN-LAST:event_novel1ActionPerformed
 
     private void pelajaran1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pelajaran1ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Pembelajaran matematika = new Pembelajaran("Aljabar", "SMA", "Matematika", "Dahlan", 100, "Airlangga", 100000, 20, 3000);
         new BayarPembelajaran(matematika).setVisible(true);
     }//GEN-LAST:event_pelajaran1ActionPerformed
 
     private void pelajaran3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pelajaran3ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Pembelajaran kimia = new Pembelajaran("Senyawa", "SMP", "Kimia", "Ryzen", 79, "Airfres", 180000, 50, 5000);
         new BayarPembelajaran(kimia).setVisible(true);
     }//GEN-LAST:event_pelajaran3ActionPerformed
 
     private void pelajaran4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pelajaran4ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Pembelajaran statistika = new Pembelajaran("Probabilitas", "Universitas", "Statistika", "Rafa", 125, "Airlangga", 120000, 15, 4000);
         new BayarPembelajaran(statistika).setVisible(true);
     }//GEN-LAST:event_pelajaran4ActionPerformed
 
     private void pelajaran5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pelajaran5ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Pembelajaran ekonomi = new Pembelajaran("Ekonomi", "SMA", "Ekonomi", "Bintang", 100, "Looose", 70000, 10, 2000);
         new BayarPembelajaran(ekonomi).setVisible(true);
     }//GEN-LAST:event_pelajaran5ActionPerformed
 
     private void komik1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_komik1ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Komik naruto = new Komik("Shonen, Fantasy, Action", "Manga","Naruto", "Masashi Kishimoto", 100, "Shueisha", 200000, 200, 5000);
         new BayarKomik(naruto).setVisible(true);
     }//GEN-LAST:event_komik1ActionPerformed
 
     private void komik2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_komik2ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Komik bleach = new Komik("Adventure, Supernatural, Fantasy", "Manga","Bleach", "Tite Kubo", 100, "Shueisha", 190000, 100, 4500);
         new BayarKomik(bleach).setVisible(true);
     }//GEN-LAST:event_komik2ActionPerformed
 
     private void komik3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_komik3ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Komik onepiece = new Komik("Shonen, Fantasy, Action, Komedi", "Manga","One Piece", "Eiichiro Oda", 100, "Shueisha", 200000, 104, 6000);
         new BayarKomik(onepiece).setVisible(true);
     }//GEN-LAST:event_komik3ActionPerformed
 
     private void komik4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_komik4ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Komik hxh = new Komik("Adventure, Fantasy, Martial Arts", "Manga","Hunter x Hunter", "Yoshihiro Togashi", 100, "Shueisha", 150000, 37, 3000);
         new BayarKomik(hxh).setVisible(true);
     }//GEN-LAST:event_komik4ActionPerformed
 
     private void komik5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_komik5ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Komik aot = new Komik("Shonen, Fantasy, Action", "Manga","Attack On Titan", "Hajime Isayama", 100, "Kodansha", 200000, 199, 5000);
         new BayarKomik(aot).setVisible(true);
     }//GEN-LAST:event_komik5ActionPerformed
 
     private void novel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novel2ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Novel bumi = new Novel("Fiksi Petualangan, Bildungsroman, Fantasi", "Bumi", "Tere Liye", 440, "Gramedia Pustaka Utama", 70000, 70, 3000);
         new BayarNovel(bumi).setVisible(true);
     }//GEN-LAST:event_novel2ActionPerformed
 
     private void novel3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novel3ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Novel rindu = new Novel("Sejarah, Fiksi, Fantasi", "Rindu", "Tere Liye", 544, "Republika", 79000, 80, 3500);
         new BayarNovel(rindu).setVisible(true);
     }//GEN-LAST:event_novel3ActionPerformed
 
     private void novel5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novel5ActionPerformed
-        // TODO add your handling code here:
         dispose();
         Novel rumahkaca = new Novel("Fiksi", "Rumah Kaca", "Pramoedya Ananta Toer", 646, "Lentera Dipantara", 145000, 17, 5000);
         new BayarNovel(rumahkaca).setVisible(true);
