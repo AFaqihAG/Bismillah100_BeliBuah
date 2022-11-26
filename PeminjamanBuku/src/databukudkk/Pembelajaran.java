@@ -33,7 +33,6 @@ public class Pembelajaran extends Buku implements DeskripsiBuku {
 
     @Override
     public String deskripsi() {
-        // TODO Auto-generated method stub
         return "Buat belajar...";
     }
 }

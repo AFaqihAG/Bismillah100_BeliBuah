@@ -116,13 +116,12 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String username="pbo";
         char[] password={'p', 'b', 'o'};
-    if (username.equals(jTextField1.getText()) && Arrays.equals(password, jPasswordField1.getText().toCharArray())) {
+    if (username.equals(jTextField1.getText().trim()) && Arrays.equals(password, jPasswordField1.getPassword())) {
         this.setVisible(false);
         new PilihBuku().setVisible(true);
         
