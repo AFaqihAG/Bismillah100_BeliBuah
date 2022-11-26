@@ -5,7 +5,6 @@
 package peminjamanbuku;
 
 import databukudkk.*;
-import nbimports.*;
 
 /**
  *
@@ -204,7 +203,7 @@ public class PilihBuku extends javax.swing.JFrame {
         labelDescPelajaran.setText("DescPelajaran here");
         getContentPane().add(labelDescPelajaran, new nbimports.AbsoluteConstraints(406, 126, 150, -1));
 
-        labelDescNovel.setText("DescNovel here");
+        labelDescNovel.setText("DescNovel here..");
         getContentPane().add(labelDescNovel, new nbimports.AbsoluteConstraints(26, 126, 150, -1));
 
         labelDescKomik.setText("DescKomik here");
