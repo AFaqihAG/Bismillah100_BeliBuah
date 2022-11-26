@@ -24,5 +24,5 @@ git clone https://github.com/AFaqihAG/Bismillah100_PeminjamanBuku.git
 ```
 Jalankan programnya dengan mengetik
 ```
-PeminjamanBuku\dist\PeminjamanBuku.jar
+Bismillah100_PeminjamanBuku\PeminjamanBuku\dist\PeminjamanBuku.jar
 ```
