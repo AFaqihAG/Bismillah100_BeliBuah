@@ -9,7 +9,7 @@
  */
 package databukudkk;
 
-public class Pembelajaran extends Buku implements DeskripsiBuku {
+public class Pembelajaran extends Buku {
     private String materi;
     private String tingkatan;
 

@@ -9,7 +9,7 @@
  */
 package databukudkk;
 
-public class Komik extends Buku implements DeskripsiBuku {
+public class Komik extends Buku {
     private String genre;
     private String jenis;
 

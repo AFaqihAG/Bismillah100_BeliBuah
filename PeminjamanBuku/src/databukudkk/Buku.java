@@ -1,6 +1,6 @@
 package databukudkk;
 
-public class Buku {
+public abstract class Buku implements DeskripsiBuku {
     private String judul;
     private String author;
     private int halaman;
@@ -86,4 +86,7 @@ public class Buku {
     {
         return this.hargaperhari;
     }
+
+    @Override
+    public abstract String deskripsi();
 }
