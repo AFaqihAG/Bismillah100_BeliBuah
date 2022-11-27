@@ -26,3 +26,6 @@ Jalankan programnya dengan mengetik
 ```
 Bismillah100_PeminjamanBuku\PeminjamanBuku\dist\PeminjamanBuku.jar
 ```
+
+### Note
+Username dan Passwordnya adalah "pbo" (tanpa tanda petik)
