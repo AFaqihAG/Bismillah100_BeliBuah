@@ -1,4 +1,4 @@
-# LAB PBO Poject Final
+# LAB PBO Project Final
 ## Pembelian atau Peminjaman Buku pada Perpustakaan
 ### Nama Anggota Kelompok
 * Ahmad Faqih Al Ghiffary   (2108107010072)
